@@ -4,68 +4,172 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jerin Jacob | Skills</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Reset and base styles */
+    body {
+      font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header styles */
+    header {
+      background: #d8a7b1; /* soft pastel pink */
+      padding: 20px 40px;
+      text-align: center;
+      color: #fff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    /* Navigation styles */
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding-bottom: 5px;
+      transition: border-bottom 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      border-bottom: 3px solid #a85d75;
+    }
+
+    /* Main content styles */
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* Section title */
+    .skills-section h2 {
+      color: #a85d75;
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 25px;
+      border-bottom: 3px solid #e6cbd5;
+      padding-bottom: 10px;
+    }
+
+    /* Each skill category */
+    .skills-category {
+      margin-bottom: 30px;
+    }
+
+    .skills-category h3 {
+      color: #bb7f94;
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .skills-category ul {
+      list-style-type: square;
+      padding-left: 20px;
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    .skills-category ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Footer styles */
+    footer {
+      background: #e6cbd5;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      color: #7a535f;
+      font-weight: 600;
+    }
+
+    /* Responsive nav for small screens */
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+    }
+  </style>
 </head>
 <body>
+
+<header>
+  <h1>Jerin Jacob</h1>
   <nav>
     <a href="index.html">About Me</a>
-    <a href="skills.html">Skills</a>
+    <a href="skills.html" class="active">Skills</a>
     <a href="project.html">Projects</a>
     <a href="contact.html">Contact</a>
     <a href="abstract.html">Resume</a>
   </nav>
+</header>
 
-  <main>
-    <h1>Skills</h1>
-
-    <section>
-      <h2>Programming Languages</h2>
+<main>
+  <section class="skills-section">
+    <h2>Skills</h2>
+    
+    <div class="skills-category">
+      <h3>Programming Languages</h3>
       <ul>
         <li>Java</li>
         <li>Python</li>
         <li>JavaScript</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <h2>Web Development</h2>
+    <div class="skills-category">
+      <h3>Web Development</h3>
       <ul>
-        <li>HTML5 & CSS3</li>
-        <li>Responsive Design</li>
-        <li>Git & GitHub Pages</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>GitHub Pages</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <h2>Database Management</h2>
+    <div class="skills-category">
+      <h3>Database Management</h3>
       <ul>
-        <li>SQL & SQLite</li>
-        <li>Database Design and Query Optimization</li>
+        <li>SQL</li>
+        <li>SQLite</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <h2>Cloud Technologies</h2>
+    <div class="skills-category">
+      <h3>Cloud Basics</h3>
       <ul>
-        <li>Basic knowledge of AWS & Azure</li>
-        <li>Interested in cloud infrastructure and deployment</li>
+        <li>Interested in AWS and Azure</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <h2>Soft Skills</h2>
+    <div class="skills-category">
+      <h3>Soft Skills</h3>
       <ul>
-        <li>Problem Solving & Logical Thinking</li>
-        <li>Team Collaboration & Cross-cultural Communication</li>
-        <li>Time Management</li>
-        <li>Teaching and Training</li>
-        <li>Digital Transformation Awareness</li>
+        <li>Problem Solving</li>
+        <li>Logical Thinking</li>
       </ul>
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
 
-  <footer>
-    &copy; 2025 Jerin Jacob. Made with ❤️ and passion.
-  </footer>
+<footer>
+  &copy; 2025 Jerin Jacob. Made with ❤️ and passion.
+</footer>
+
 </body>
 </html>
