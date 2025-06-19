@@ -5,13 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jerin Jacob | About Me</title>
   <style>
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-    header { background: #ff3366; color: white; padding: 20px 40px; text-align: center; }
-    nav a { margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
-    section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-    h2 { color: #ff3366; }
-    footer { text-align: center; padding: 20px; background: #eee; font-size: 0.9rem; color: #666; }
-  </style>
+   #sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+#tab {
+  background: #ff3366;
+  color: white;
+  padding: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#sidebar-menu {
+  background: #ff3366;
+  color: white;
+  width: 180px;
+  height: 100%;
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  left: -180px;
+  transition: left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#sidebar-menu.open {
+  left: 0;
+}
+
+#sidebar-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+ </style>
 </head>
 <body>
   <div id="sidebar">
