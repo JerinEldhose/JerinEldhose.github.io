@@ -3,59 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jerin Jacob | About Me</title>
-  <style>
-   #sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  z-index: 1000;
-}
+  <title>Jerin Jacob | About Me</title
+  <link rel="stylesheet" href="style.css" />
 
-#tab {
-  background: #ff3366;
-  color: white;
-  padding: 15px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-#sidebar-menu {
-  background: #ff3366;
-  color: white;
-  width: 180px;
-  height: 100%;
-  padding-top: 20px;
-  position: absolute;
-  top: 0;
-  left: -180px;
-  transition: left 0.3s ease;
-  display: flex;
-  flex-direction: column;
-}
-
-#sidebar-menu a {
-  color: white;
-  text-decoration: none;
-  padding: 15px 20px;
-  font-size: 1.1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-#sidebar-menu.open {
-  left: 0;
-}
-
-#sidebar-menu a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
- </style>
-</head>
+  </head>
 <body>
   <div id="sidebar">
   <div id="tab" onclick="toggleSidebar()">☰</div>
