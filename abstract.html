@@ -2,27 +2,181 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jerin Jacob - Abstract</title> 
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jerin Jacob | Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+      margin: 0; 
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f0f4f8;
+      color: #444;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Vertical Side Nav */
+    nav {
+      background: #a3d2ca; /* pastel teal */
+      width: 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 0;
+      transition: width 0.3s ease;
+      overflow: hidden;
+    }
+    nav:hover {
+      width: 220px;
+      box-shadow: 3px 0 8px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: #064663;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 15px 0;
+      white-space: nowrap;
+      width: 100%;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    nav:hover a {
+      justify-content: flex-start;
+    }
+    nav a:hover {
+      background: #95c8d8;
+      color: #023047;
+    }
+    nav a::before {
+      content: '•'; 
+      font-size: 1.5rem; 
+      margin-right: 12px;
+      color: #064663;
+    }
+    nav:hover a::before {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    /* Main Content */
+    main {
+      flex: 1;
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      color: #444;
+    }
+
+    h1 {
+      text-align: center;
+      color: #064663;
+      font-weight: 700;
+      margin-bottom: 20px;
+      font-size: 2.8rem;
+      letter-spacing: 1.5px;
+    }
+
+    h2 {
+      color: #023047;
+      margin-bottom: 12px;
+      font-weight: 600;
+      border-bottom: 3px solid #95c8d8;
+      padding-bottom: 6px;
+      max-width: max-content;
+      margin-top: 30px;
+    }
+
+    h3 {
+      color: #064663;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      padding: 15px 0;
+      color: #777;
+      font-size: 0.9rem;
+      border-top: 1px solid #ccc;
+      width: 100%;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        width: 60px;
+      }
+      nav:hover {
+        width: 180px;
+      }
+      main {
+        padding: 20px;
+      }
+    }
+    @media (max-width: 480px) {
+      body {
+        flex-direction: column;
+      }
+      nav {
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+        justify-content: center;
+      }
+      nav:hover {
+        width: 100%;
+      }
+      nav a {
+        margin: 0 10px;
+        padding: 8px 15px;
+      }
+      nav a::before {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
+
+  <nav>
+    <a href="index.html" title="About Me">About Me</a>
+    <a href="skills.html" title="Skills">Skills</a>
+    <a href="project.html" title="Projects">Projects</a>
+    <a href="contact.html" title="Contact">Contact</a>
+    <a href="abstract.html" title="Resume">Resume</a>
+  </nav>
+
+  <main>
     <h1>Jerin Jacob</h1>
-    <nav><a href="index.html">About Me</a>
-      <a href="skills.html">Skills</a>
-      <a href="project.html">Projects</a>
-      <a href="contact.html">Contact</a>
-      <a href="abstract.html">Resume</a>
-</nav>
-          </header>
- <main>
-    <section class="info">
+
+    <section>
       <h2>Contact Information</h2>
       <p>📍 Birger Jarlsgatan 21, LGH 1903, Jönköping – 55463</p>
       <p>📞 +46 764408802</p>
       <p>📧 <a href="mailto:jerinjacob163@gmail.com">jerinjacob163@gmail.com</a></p>
-      <p>🔗 <a href="https://www.linkedin.com/in/jerin-jacob-0424199a/" target="_blank">linkedin.com/in/jerin-jacob-0424199a</a></p>
+      <p>🔗 <a href="https://www.linkedin.com/in/jerin-jacob-0424199a/" target="_blank" rel="noopener noreferrer">linkedin.com/in/jerin-jacob-0424199a</a></p>
       <p>👤 Sex: Female</p>
       <p>🎂 Date of Birth: 1992/02/04</p>
     </section>
@@ -104,8 +258,9 @@
     </section>
   </main>
 
-  <footer style="text-align:center; padding: 20px; background:#eee;">
-    &copy; 2025 Jerin Jacob. All rights reserved.
+  <footer>
+    &copy; 2025 Jerin Jacob. Made with ❤️ and passion.
   </footer>
+
 </body>
 </html>
