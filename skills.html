@@ -4,121 +4,68 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jerin Jacob | Skills</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0; 
-      padding: 0;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f0f4f8;
-      color: #444;
-      display: flex;
-      min-height: 100vh;
-    }
-    nav {
-      background: #a3d2ca;
-      width: 70px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem 0;
-      transition: width 0.3s ease;
-      overflow: hidden;
-    }
-    nav:hover {
-      width: 220px;
-      box-shadow: 3px 0 8px rgba(0,0,0,0.1);
-    }
-    nav a {
-      color: #064663;
-      text-decoration: none;
-      font-weight: 600;
-      margin: 15px 0;
-      white-space: nowrap;
-      width: 100%;
-      padding: 10px 20px;
-      border-radius: 30px;
-      transition: background 0.3s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    nav:hover a {
-      justify-content: flex-start;
-    }
-    nav a:hover {
-      background: #95c8d8;
-      color: #023047;
-    }
-    nav a::before {
-      content: '•'; 
-      font-size: 1.5rem; 
-      margin-right: 12px;
-      color: #064663;
-    }
-    nav:hover a::before {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    main {
-      flex: 1;
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-      color: #444;
-    }
-    h1 {
-      text-align: center;
-      color: #064663;
-      font-weight: 700;
-      margin-bottom: 20px;
-      font-size: 2.8rem;
-      letter-spacing: 1.5px;
-    }
-    h2 {
-      color: #023047;
-      margin-bottom:  12px;
-      font-weight: 600;
-      border-bottom: 3px solid #95c8d8;
-      padding-bottom: 6px;
-      max-width: max-content;
-      margin-top: 30px;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-      margin-bottom: 20px;
-    }
-    li {
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-      line-height: 1.4;
-    }
-    footer {
-      margin-top: 60px;
-      text-align: center;
-      padding: 15px 0;
-      color: #777;
-      font-size: 0.9rem;
-      border-top: 1px solid #ccc;
-      width: 100%;
-    }
-    @media (max-width: 768px) {
-      nav {
-        width: 60px;
-      }
-      nav:hover {
-        width: 180px;
-      }
-      main {
-        padding: 20px;
-      }
-    }
-    @media (max-width: 480px) {
-      body {
-        flex-direction: column;
-      }
-      nav {
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">About Me</a>
+    <a href="skills.html">Skills</a>
+    <a href="project.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="abstract.html">Resume</a>
+  </nav>
+
+  <main>
+    <h1>Skills</h1>
+
+    <section>
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Web Development</h2>
+      <ul>
+        <li>HTML5 & CSS3</li>
+        <li>Responsive Design</li>
+        <li>Git & GitHub Pages</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Database Management</h2>
+      <ul>
+        <li>SQL & SQLite</li>
+        <li>Database Design and Query Optimization</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Cloud Technologies</h2>
+      <ul>
+        <li>Basic knowledge of AWS & Azure</li>
+        <li>Interested in cloud infrastructure and deployment</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>Problem Solving & Logical Thinking</li>
+        <li>Team Collaboration & Cross-cultural Communication</li>
+        <li>Time Management</li>
+        <li>Teaching and Training</li>
+        <li>Digital Transformation Awareness</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Jerin Jacob. Made with ❤️ and passion.
+  </footer>
+</body>
+</html>
